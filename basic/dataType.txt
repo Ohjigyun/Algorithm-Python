@@ -205,7 +205,8 @@ dict(counter) // {'red' : 2, 'blue' : 3, 'green': 1}
 import math
 //최소 공배수
 def lcm(a,b) :
-    return a*b / math.gcd(a,b)
+    return a*b // math.gcd(a,b)
+// a*b // math.gcd(a,b)에서 //는 몫을 구하는 연산자
 
 math.gcd(21, 14) // 7
 lcm(21, 14) // 42
